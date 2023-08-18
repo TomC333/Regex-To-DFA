@@ -64,13 +64,57 @@ void printMachine(machine &machine){
     cout << paths;
 }
 
+
+/** function generates dot file according to received machine for "graphviz" use.
+ */
+void generateDotFile(const machine& dfa, const string& filename) {
+
+    ofstream dotFile(filename);
+    if (!dotFile.is_open()) {
+        cerr << "Error: Unable to open file for writing." << endl;
+        return;
+    }
+
+    dotFile << "digraph DFA {" << endl;
+
+    // Add states, if state is acceptance make its shape double circle
+    for (int i = 0; i < stateCounter; i++) {
+        dotFile << "  " << i;
+        if (find(dfa.acceptances.begin(), dfa.acceptances.end(), i) != dfa.acceptances.end()) {
+            dotFile << " [shape=doublecircle]";
+        } else {
+            dotFile << " [shape=circle]";
+        }
+        dotFile << ";" << endl;
+    }
+
+    // Adding paths
+    for (const auto& entry : dfa.paths) {
+        int fromState = entry.first;
+        for (const auto& transition : entry.second) {
+            char symbol = transition.first;
+            int toState = transition.second;
+            dotFile << "  " << fromState << " -> " << toState << " [label=\"" << symbol << "\"];" << endl;
+        }
+    }
+
+    dotFile << "}" << endl;
+    dotFile.close();
+}
+
 int main() {
 
     string regex;
     cin >> regex;
 
     machine result = evaluate(regex);
-    printMachine(result);
+    string dotFilename = "dfa.dot";
+    generateDotFile(result, dotFilename);
+
+    cout << "DOT file generated: " << dotFilename << endl;
+
+    // Call Graphviz to generate a graphical representation
+    system(("dot -Tpng " + dotFilename + " -o dfa.png").c_str());
 
     return 0;
 }
