@@ -111,10 +111,12 @@ int main() {
     string dotFilename = "dfa.dot";
     generateDotFile(result, dotFilename);
 
-    cout << "DOT file generated: " << dotFilename << endl;
-
     // Call Graphviz to generate a graphical representation
+    cout << "DOT file generated: " << dotFilename << endl;
     system(("dot -Tpng " + dotFilename + " -o dfa.png").c_str());
+
+    cout << "Generated DFA\n" << endl;
+    printMachine(result);
 
     return 0;
 }
