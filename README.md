@@ -17,7 +17,7 @@
 
 Welcome to the RegularExpression to DFA Converter repository! This project provides a simple yet powerful tool to convert regular expressions into Deterministic Finite State Automata (DFAs). Whether you're a student, developer, or enthusiast, this tool will help you grasp the relationship between regular expressions and DFAs while offering practical benefits in pattern recognition and text searching.
 
-## Features 🫡
+## Features 👀
 
 - **Concise Conversion:** Efficiently transform regular expressions into Deterministic Finite State Automata (DFAs) to enhance pattern matching and text searching capabilities.
 
