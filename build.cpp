@@ -77,11 +77,6 @@ void generateDotFile(const machine& dfa, const string& filename) {
 
     dotFile << "digraph DFA {" << endl;
 
-    // Add color settings
-    dotFile << "  graph [bgcolor=black];" << endl;
-    dotFile << "  node [color=white, fontcolor=white];" << endl;
-    dotFile << "  edge [color=white, fontcolor=white];" << endl;
-
     // Add states, if state is acceptance make its shape double circle
     for (int i = 0; i < stateCounter; i++) {
         dotFile << "  " << i;

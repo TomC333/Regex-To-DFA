@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(Regex_To_DFA)
+project(Regex-To-DFA)
 
 set(CMAKE_CXX_STANDARD 14)
 

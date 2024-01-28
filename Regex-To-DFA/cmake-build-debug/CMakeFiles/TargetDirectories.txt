@@ -1,3 +1,0 @@
-C:/MyFiles/MyProjects/Regex-To-DFA/Regex-To-DFA/cmake-build-debug/CMakeFiles/Regex_To_DFA.dir
-C:/MyFiles/MyProjects/Regex-To-DFA/Regex-To-DFA/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/MyFiles/MyProjects/Regex-To-DFA/Regex-To-DFA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
