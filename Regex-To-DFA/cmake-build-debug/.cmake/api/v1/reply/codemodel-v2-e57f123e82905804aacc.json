@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Regex_To_DFA::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Regex_To_DFA-Debug-f8a76409d9617a94696f.json",
+					"jsonFile" : "target-Regex_To_DFA-Debug-5501c359de605e76f4ae.json",
 					"name" : "Regex_To_DFA",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ddadi/Desktop/Regex-To-DFA/Regex-To-DFA/cmake-build-debug",
-		"source" : "C:/Users/ddadi/Desktop/Regex-To-DFA/Regex-To-DFA"
+		"build" : "C:/MyFiles/MyProjects/Regex-To-DFA/Regex-To-DFA/cmake-build-debug",
+		"source" : "C:/MyFiles/MyProjects/Regex-To-DFA/Regex-To-DFA"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 5
 	}
 }

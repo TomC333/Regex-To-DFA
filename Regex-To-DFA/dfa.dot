@@ -1,4 +1,7 @@
 digraph DFA {
+  graph [bgcolor=black];
+  node [color=white, fontcolor=white];
+  edge [color=white, fontcolor=white];
   0 [shape=doublecircle];
   1 [shape=circle];
   2 [shape=circle];
