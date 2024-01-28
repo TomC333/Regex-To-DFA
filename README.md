@@ -75,7 +75,7 @@ The given regular expression: `((u8p|y|j)((p5x|ypje|(dr)*|y1g)*))*|((7g|(j)*|fhx
 
 ### Generated DFA
 The DFA representing the given regular expression can be visualized below:
-![Generated DFA](https://github.com/Toms343/Regex-To-DFA/blob/main/Regex-To-DFA/dfa.png)
+![Generated DFA](https://github.com/TomC333/Regex-To-DFA/blob/main/dfa.png)
 
 ### Explanation
 The DFA illustration above provides insights into the structure and transitions of the DFA corresponding to the complex regular expression. The tool's console output would further provide detailed information about the DFA's states, transitions, and acceptance states.
