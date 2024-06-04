@@ -8,7 +8,6 @@ using namespace std;
 
 
 struct machine{
-
     int startState = -1;
     bool startIsAccept = false;
     vector<int> acceptances;
@@ -26,12 +25,11 @@ int findClosingParenthesis(int startIndex, string expr);
 int stateCounter = 0;
 
 /** function prints received machine
- * function prints number of states, number of acceptance state and number of paths on the first line
- * function prints acceptance states on second line
+ * prints number of states, number of acceptance state and number of paths on the first line
+ * prints acceptance states on second line
  * after that function prints paths for every state, (number of paths, (character, next state))
  */
 void printMachine(machine &machine){
-
     int n = stateCounter;
     int a = (int) machine.acceptances.size();
     int t = 0;
@@ -65,10 +63,9 @@ void printMachine(machine &machine){
 }
 
 
-/** function generates dot file according to received machine for "graphviz" use.
+/** function generates dot file according to received machine to use "graphviz".
  */
 void generateDotFile(const machine& dfa, const string& filename) {
-
     ofstream dotFile(filename);
     if (!dotFile.is_open()) {
         cerr << "Error: Unable to open file for writing." << endl;
@@ -103,7 +100,6 @@ void generateDotFile(const machine& dfa, const string& filename) {
 }
 
 int main() {
-
     string regex;
     cin >> regex;
 
@@ -134,7 +130,6 @@ int findClosingParenthesis(int startIndex, string expr){
 }
 
 machine evaluate(string expr){
-
     // declaring result machine
     machine result;
     result.startIsAccept = true;
@@ -197,7 +192,6 @@ machine evaluate(string expr){
 }
 
 void andOperator(machine &first, machine &second){
-
     if(second.startState == -1) return;
 
     map<int, vector<pair<char, int>>> paths = second.paths;
@@ -250,7 +244,6 @@ bool vectorContains(const vector<pair<char, int>>& vec, pair<char, int> value){
 }
 
 void asteriskOperator(machine &machine){
-
     if(machine.startState == -1) return;
 
     // we should add all path to acceptance states which goes from starting state
@@ -274,7 +267,6 @@ void asteriskOperator(machine &machine){
 }
 
 void orOperator(machine &first, machine &second) {
-
     if(second.startState == -1) return;
 
     // if second machines starting state is acceptance first machines starting state also should become acceptance
