@@ -3,45 +3,34 @@
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/Toms343/Regex-To-DFA)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Toms343/Regex-To-DFA/blob/main/LICENSE)
 
-## Table of Contents 📜
+## Background 🤯
 
-- [Introduction](#introductioon-)
-- [Features](#features-)
-- [Graphviz](#graphviz-)
-- [Outputs](#outputs-)
-- [Example](#example-)
-- [Contributing](#contributing-)
-- [Contact](#contact-)
+This project started as a university assignment for the **Theoretical Informatics** course. The goal was to transform regular expressions into a deterministic state machine. Initially, the results were simply printed in the terminal.  
 
-## Introduction 🗨️
+After completing the course, I discovered **Graphviz**—an amazing tool for visualizing graphs! 🌟 I decided to revisit my assignment and enhance its output, turning it into something visually appealing and much cooler. 😎  
 
-Welcome to the RegularExpression to DFA Converter repository! This project provides a simple yet powerful tool to convert regular expressions into Deterministic Finite State Automata (DFAs). Whether you're a student, developer, or enthusiast, this tool will help you grasp the relationship between regular expressions and DFAs while offering practical benefits in pattern recognition and text searching.
+It's rigth to say that this project doesn't fully cover all aspects of regular expressions. It supports only three operators: **Asterisk (`*`)**, **Or (`|`)**, and **And (concatenation)**.  
 
-## Features 👀
+As this is an educational project, the limited scope is intentional. 📚 I hope you enjoy exploring it as much as I enjoyed creating it! 🚀  
 
-- **Concise Conversion:** Efficiently transform regular expressions into Deterministic Finite State Automata (DFAs) to enhance pattern matching and text searching capabilities.
 
-- **Operator Support:** Handle 'asterisk' (*), 'or' (|), and 'and' operators to create intricate and customized patterns that suit your requirements.
-
-- **Graphviz Integration:** Seamlessly generate PNG visualizations of DFAs using Graphviz, offering a visual representation of the DFA's structure and transitions.
-
-- **Educational Tool:** Utilize this tool as a comprehensive educational aid to learn about regular expressions and DFAs. Gain insights into the foundational concepts of computational theory and programming through practical application.
-
-Explore the power and versatility of this tool, which serves as a bridge between the theoretical underpinnings of regular expressions and the practical implementation of DFAs in pattern recognition and text analysis.
-
-## Graphviz 🔥
+## Setup 🌱 
 
 To generate DFA visualizations, you'll need to have Graphviz installed on your system. Follow these steps to set up Graphviz:
 
-1. **Download Graphviz:** Visit the Graphviz official website and download the appropriate version for your operating system: [Graphviz Downloads](https://graphviz.org/download/)
+1. Download & install [graphviz](https://graphviz.org/download/)
 
-2. **Install Graphviz:** Install Graphviz on your system using the installer or package manager that corresponds to your operating system.
+2. Download & install [cmake](https://cmake.org/download/)
 
-3. **Add Graphviz to PATH:** For the DFA visualization to work smoothly, make sure to add Graphviz to your system's PATH environment variable. This allows the tool to locate the Graphviz executable files.
+3. Open your terminal/command prompt and Use the cd command to navigate to the directory where you cloned the regex to DFA repository.
 
-With Graphviz properly installed and configured, you'll be able to generate PNG visualizations of DFAs using the tool. This visual representation can greatly aid in understanding the structure and transitions within the generated automata.
+4. Create and naviage to build directory `mkdir build && cd build`
 
-Feel free to consult the official Graphviz documentation for more detailed installation instructions and troubleshooting, if needed.
+5. Generate build files `cmake ..`
+
+6. Compile the code `cmake --build .`
+
+7. Run compiled code `./Regex_To_DFA`
 
 ## Outputs ✅
 
@@ -76,27 +65,3 @@ The given regular expression: `((u8p|y|j)((p5x|ypje|(dr)*|y1g)*))*|((7g|(j)*|fhx
 ### Generated DFA
 The DFA representing the given regular expression can be visualized below:
 ![Generated DFA](https://github.com/TomC333/Regex-To-DFA/blob/main/dfa.png)
-
-### Explanation
-The DFA illustration above provides insights into the structure and transitions of the DFA corresponding to the complex regular expression. The tool's console output would further provide detailed information about the DFA's states, transitions, and acceptance states.
-
-## Contributing 🤝
-Contributions are welcome! If you would like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m "Add your feature"`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a pull request on the [GitHub repository](https://github.com/Toms343/Regex-To-DFA)
-
-Please ensure that your contributions adhere to the following guidelines:
-- Maintain a clear and concise coding style.
-- Document any significant changes or additions.
-
-Thank you for your contributions! 🙌
-
-## Contact 📧
-
-For any questions or feedback, feel free to reach out:
-- Email: d.dadiani343@gmail.com
-- LinkedIn: [David Dadiani](https://www.linkedin.com/in/david-dadiani-6677b5226/)
