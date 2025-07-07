@@ -10,5 +10,4 @@ Supported operators: **concatenation**, **OR (`|`)**, and **Kleene star (`*`)**.
 ### 🧪 Example  
 **Regex:** `((u8p|y|j)((p5x|ypje|(dr)|y1g)))|((7g|(j)|fhx))((e|xo1))(k01j)|(flbb|y93w|dk)(hvd)|qz`  
 
-**Generated DFA:**  
 ![Generated DFA](https://github.com/TomC333/Regex-To-DFA/blob/main/dfa.png)
